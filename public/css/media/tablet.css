@@ -1,0 +1,98 @@
+@media (max-width: 1100px) {
+    :root {
+        --section-big-border: 160px;
+        --section-pd: 20px;
+
+    }
+	header > div {
+    	--header-pd: 20px;
+	}
+    nav {
+        display: none !important;
+    }
+    #header-phone {
+        display: flex;
+        width: 36px;
+        height: 36px;
+    }
+    #header-calc-btn {
+        display: none;
+    }
+    #header-contacts {
+        display: none;
+    }
+    .header-child button {
+        display: none;
+    }
+    #menu-button {
+        display: flex;
+        width: 36px;
+    }
+    .footer-section:first-child {
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    .section-content_right a {
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    .section_call > div > div a:first-child {
+        margin-top: 60px;
+    }
+    .section_call > div > div > div {
+        min-width: 240px;
+        flex-direction: column;
+    }
+    .section_call a:first-child:before {
+        transform: scale(0.6);
+        right: -50%;
+        bottom: 85%;
+        width: 1250px;
+        overflow: hidden;
+    }
+    .section_call a:last-child {
+        margin-bottom: 40px;
+    }
+    .section_call a:last-child:after {
+        bottom: 0%;
+        left: 50%;
+    }
+    .section_call a {
+        width: 240px;
+    }
+    .slider-controls {
+        left: -1%;
+        width: calc(102%);
+    }
+
+    .section-child {
+        padding-top: 0px;
+        border: none;
+    }
+    .section-child {
+        position: absolute;
+        top: calc(100% - 175px);
+        right: calc(100% - 175px);
+        padding: 0;
+    }
+    .section-child .section_img_container {
+        width: 260px;
+        height: 260px;
+    }
+    .section-child .section-img-box::after {
+        display: none;
+    }
+    .section-content_right > div {
+        padding: 20px !important;
+        border-left: 2px solid var(--light-orange);
+        border-bottom: 2px solid var(--light-orange);
+        border-bottom-left-radius: 100px;
+        padding-bottom: 160px !important;
+    }
+    .section-child .section_img_container {
+        width: 160px;
+        height: 160px;
+    }
+}

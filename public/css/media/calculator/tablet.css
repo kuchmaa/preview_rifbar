@@ -1,0 +1,163 @@
+@media (max-width: 1100px) {
+    #shipWhitUs {
+        gap: 30px;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: end;
+        gap: 10px;
+    }
+    .slider-controls {
+        left: 25%;
+        width: 50%;
+        top: 95.5%;
+    }
+    #map {
+        width: auto;
+        height: 100%;
+    }
+    #shipWhitUs svg {
+        width: 300px;
+    }
+    #furniture > div {
+        flex-direction: column;
+    }
+    #custom-furniture {
+        width: 100%;
+        justify-content: space-between;
+    }
+    #furnitureSizesWrapper {
+        align-items: center;
+    }
+    #furnitureCustomSize {
+        max-width: 620px;
+    }
+    #suitcases {
+        flex-direction: column;
+    }
+    #suitcases > div {
+        align-items: flex-start;
+    }
+    .slider-controls {
+        left: 5%;
+        width: 90%;
+        top: 96.5%;
+    }
+    #order{
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-items: start;
+    }
+    #orderAmount{
+        width: 100%;
+    }
+    #order-wrapper > div{
+        flex-direction: column !important;
+        align-items: end;
+    }
+    #orderOptionWrapper{
+        width: 100%;
+        max-width: 100%;
+        align-items: end;
+    }
+    #orderOptionWrapper > div {
+        width: 100%;
+    }
+    #orderOptionWrapper h3 {
+        text-align: center;
+    }
+    .payment-methods > div {
+        width: calc(33% - 15px);
+    }
+}
+@media (max-width: 850px) {
+    #shipWhitUs {
+        padding: 30px;
+        align-items: flex-end;
+        min-height: 350px;
+    }
+    #shipWhitUs svg {
+        position: relative;
+        z-index: 1;
+        width: 150px;
+        height: 50px;
+    }
+    #shipWhitUs img {
+        position: relative;
+        z-index: 1;
+        height: 140px;
+        max-width: 100%;
+    }
+    #calcSection .section-content > div {
+        flex-direction: column;
+        align-items: end;
+    }
+    #calcSpan {
+        --width: 100%;
+    }
+
+    #custom-furniture {
+        gap: 0;
+        justify-content: space-between;
+    }
+    #mattresses {
+        flex-direction: column;
+    }
+    #mattresses > div {
+        width: 100%;
+    }
+    #mattressesAccordion {
+        max-width: 100%;
+    }
+    .accordion-item_body {
+        align-items: start;
+        padding-left: 40px;
+    }
+    #doors {
+        flex-direction: column;
+        align-items: center;
+    }
+    #tv {
+        flex-direction: column;
+    }
+    #tv .box-list {
+        align-items: center;
+    }
+
+    #calcSection > div {
+        padding-bottom: 0;
+    }
+    #calcSection .banner {
+        display: none;
+    }
+    #calc > div > div > h3 {
+        font-size: 24px !important;
+        width: 250px;
+        text-align: left;
+    }
+    #calcSpan span:last-child {
+        display: none;
+    }
+    #order {
+        /* flex-direction: column-reverse; */
+        margin-bottom: 12px;
+    }
+}
+@media (max-width: 800px) {
+    .service-card {
+        max-width: 100%;
+    }
+}
+@media (max-width: 768px) {
+    #van {
+        flex-direction: column;
+    }
+    #van > div:first-child {
+        gap: 20px;
+        width: 100%;
+        align-items: center;
+    }
+    #services_cards {
+        flex-direction: column;
+    }
+}

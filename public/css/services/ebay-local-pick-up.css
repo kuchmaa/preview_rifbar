@@ -1,0 +1,72 @@
+@import url(/css/service_svg.css);
+@import url(/css/components/geography.css);
+
+#hero1 p {
+    margin: 0;
+}
+#ebay > div {
+    border-top: solid 2px var(--light-orange);
+    border-right: solid 2px var(--light-orange);
+    border-radius: 0 var(--section-big-border) 0 0;
+}
+#benefits ul {
+    align-items: center;
+    min-width: 250px;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+ /* justify-content: space-evenly; */
+}
+
+.service-card {
+     flex: 1 1 28%;
+    min-width: 300px;
+}
+.service-card .service-svg {
+    margin-bottom: 18px;
+}
+
+#how-it-works {
+    --section-col-gap: 20px;
+}
+.process-timeline {
+    --section-content-pd: 20px;
+    --direction: row;
+    display: flex;
+    flex-direction: var(--direction);
+}
+.timeline-line {
+    position: absolute;
+    top: calc(20px + 30px);
+    width: 100%;
+    border: 2px solid var(--light-orange);
+    z-index: -1;
+}
+.timeline-step{
+    max-width: 400px;
+    width: 30%;
+    min-width: 280px;
+}
+.timeline-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+}
+.step-badge{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--blue);
+    color: white;
+    border-radius: 60px;
+}
+
+@media (max-width: 375px){
+    .service-card {
+        width: 100%;
+        min-width: 100%;
+    }
+}

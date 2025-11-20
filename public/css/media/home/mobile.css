@@ -1,0 +1,75 @@
+@media (max-width: 768px) {
+    #call2 > div {
+        --sec-text-pd: 0px;
+    }
+    #whetherYouNeed {
+        padding: 20px !important;
+    }
+    #partners .slider-page {
+        flex-wrap: wrap;
+        row-gap: 40px;
+    }
+    #clientSlider {
+        flex-direction: column;
+    }
+    #clientSlider .slider-controls {
+        position: relative;
+        width: 50%;
+        left: 0;
+    }
+    #geography {
+        --section-pd: 0px;
+    }
+    #center-content {
+        margin: 20px 0;
+    }
+}
+@media (max-width: 620px) {
+    #services_cards {
+        column-gap: 20px;
+    }
+    #center-content {
+        flex-direction: column;
+        align-items: center !important;
+    }
+    #center-content .number-item {
+        width: 90%;
+    }
+    #center-content .number-item:nth-child(2n) {
+        align-items: end;
+    }
+    #partners .slider-controls {
+        width: 105%;
+    }
+    #services_cards {
+        justify-content: center;
+    }
+    .service-card {
+        width: 100%;
+        max-width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #whetherYouNeed {
+       --section-content-pd: 0px;
+    }
+    #whetherYouNeed h2,
+    #call2 h2 {
+        font-size: 32px;
+    }
+    #call2 > div div:nth-child(2) {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 450px) {
+    #calculator .section-img-box {
+        display: none;
+    }
+}
+@media (max-width: 425px) {
+    .service-card {
+        gap: 10px;
+        flex-direction: column;
+    }
+}

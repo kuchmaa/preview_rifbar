@@ -1,0 +1,358 @@
+@import url(./components/geography.css);
+@import url(./service_svg.css);
+#hiddenH1{
+	display: none;
+}
+
+#animation-text-wrapper {
+    overflow: hidden;
+    height: 80px;
+	font-size: 64px !important;
+	line-height: 76.8px !important;
+}
+#comment-form {
+    gap: 18px;
+}
+#comment-form > div {
+gap: 12px;
+}
+#comment-form > div > * {
+    max-width: 500px;
+
+}
+#comment-form-wrapper{
+    gap: 16px;
+}
+/* #animation-text {
+    position: relative;
+    animation-delay: 2000ms;
+    animation-timing-function: cubic-bezier(0.79, -0.03, 0.51, 1.02);
+    animation-duration: 14s;
+    animation-name: animation-text;
+    animation-iteration-count: infinite;
+    gap: 20px;
+}
+#animation-text div:nth-child(2) {
+    color: var(--light-orange);
+}
+#animation-text div:nth-child(3) {
+    color: var(--orange);
+}
+@keyframes animation-text {
+    0% {
+        top: 0%;
+    }
+
+    16.67% {
+        top: 0%;
+    }
+
+    33.33% {
+        top: -100%;
+    }
+
+    50% {
+        top: -100%;
+    }
+
+    66.67% {
+        top: -200%;
+    }
+
+    83.33% {
+        top: -200%;
+    }
+
+    91.67% {
+        top: -100%;
+    }
+
+    95.83% {
+        top: 0%;
+    }
+
+    100% {
+        top: 0%;
+    }
+} */
+
+#animation-text {
+	position: relative;
+	animation-delay: 2000ms;
+	animation-timing-function: cubic-bezier(0.79, -0.03, 0.51, 1.02);
+	animation-duration: 10s;
+	animation-name: animation-text;
+	animation-iteration-count: infinite;
+}
+
+#animation-text div:nth-child(1) {
+	color: var(--light-orange);
+}
+
+#animation-text div:nth-child(2) {
+	color: var(--orange);
+}
+
+@keyframes animation-text {
+	0% {
+		top: 0%;
+	}
+	16.66% {
+		top: 0%;
+	}
+
+	33.33% {
+		top: -100%;
+	}
+	49.99% {
+		top: -100%;
+	}
+
+	66.66% {
+		top: -200%;
+	}
+	83.33% {
+		top: -200%;
+	}
+
+	100% {
+		top: 0%;
+	}
+}
+
+#center-content{
+	padding-top: var(--section-content-pd);
+    padding-bottom: var(--section-content-pd);
+	gap: 60px;
+}
+#center-content > div {
+	width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.number-item {
+    gap: 15px;
+}
+.number-item > div {
+    gap: 10px;
+    align-items: flex-end;
+}
+.number-item > div span {
+    font-size: 24px;
+    line-height: 29.43px;
+}
+.number-item .h1 {
+    color: var(--orange);
+    font-size: 80px;
+    font-size: 80px;
+    line-height: 96px;
+}
+
+#logistic > div {
+    border-top: solid 2px var(--light-orange);
+    border-right: solid 2px var(--light-orange);
+    border-radius: 0 var(--section-big-border) 0 0;
+}
+#logistic .section-text {
+    max-width: 495px;
+}
+
+#services {
+    padding: var(--section-content-pd);
+}
+#services_cards {
+    margin-top: 40px;
+    justify-content: center;
+    row-gap: 60px;
+    column-gap: 75px;
+    flex-wrap: wrap;
+}
+#services > div > div:last-child {
+    padding-bottom: 20px;
+    padding: 0 10px;
+}
+.service-card {
+    height: auto;
+    justify-content: space-between;
+}
+.service-card .service-svg {
+    margin-bottom: 22px;
+}
+.service-card > div {
+    max-width: 390px;
+}
+
+#setsUs > div,
+#setsUs {
+    margin-bottom: 0;
+}
+
+#setsUs > .section-text {
+    max-width: 510px;
+    gap: 32px;
+}
+
+#calculator > div {
+    justify-content: end;
+    padding-bottom: var(--section-content-pd);
+}
+#calculator .section-text {
+    max-width: 495px;
+    align-items: end;
+    text-align: end;
+}
+
+#call2 {
+    padding-bottom: var(--section-content-pd);
+    box-sizing: border-box;
+}
+#call2 > div {
+    --sec-text-pd: 140px;
+    gap: 20px;
+    padding-left: var(--sec-text-pd);
+    padding-right: var(--sec-text-pd);
+}
+#call2 > div div:nth-child(2) {
+    box-sizing: border-box;
+    color: var(--light-orange);
+    text-align: end;
+    width: 100%;
+    justify-content: flex-end;
+    gap: 60px;
+}
+#call2 > div > div a {
+    position: relative;
+}
+#call2 > div div:nth-child(2) > div {
+    gap: 10px;
+}
+
+#call2 a:last-child:after {
+    bottom: 80px;
+    left: -5px;
+}
+
+#player-section {
+    padding-bottom: var(--section-content-pd);
+}
+#player {
+    display: none;
+    max-width: 100%;
+    width: 1280px;
+    aspect-ratio: 16/9;
+    background-image: url(/imgs/home-map.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+    position: relative;
+}
+#player::before {
+    content: "";
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    z-index: 0;
+    background: #304fff33;
+}
+#player::after {
+    position: relative;
+    z-index: 1;
+    content: url('data:image/svg+xml,<svg width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M67.5 101.25L67.5 48.75L97.5 74.9998L67.5 101.25Z" fill="white"/><path fill-rule="evenodd" clip-rule="evenodd" d="M75 146.25C114.35 146.25 146.25 114.35 146.25 75C146.25 35.6497 114.35 3.75 75 3.75C35.6497 3.75 3.75 35.6497 3.75 75C3.75 114.35 35.6497 146.25 75 146.25ZM75 150C116.421 150 150 116.421 150 75C150 33.5786 116.421 0 75 0C33.5786 0 0 33.5786 0 75C0 116.421 33.5786 150 75 150Z" fill="white"/></svg>');
+}
+
+#client .slider-page {
+    gap: 20px;
+}
+#comments-slider .slider-page {
+    gap: 10px;
+}
+.comment-item {
+    box-sizing: border-box;
+    max-width: 550px;
+    width: 100%;
+    padding-top: 25px;
+    padding-right: 30px;
+    padding-bottom: 25px;
+    padding-left: 30px;
+    gap: 4px;
+    border-radius: 30px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--light-orange);
+}
+.comment-user {
+    gap: 6.5px;
+}
+#nyc-freight-overview > div{
+    gap: 20px;
+}
+ul{
+    padding: 0 15px;
+    margin: 0;
+}
+.comment-user_avatar {
+    width: 60px;
+    min-width: 60px;
+    height: 60px;
+    min-height: 60px;
+    border-radius: 100px;
+    background-color: var(--gray);
+}
+
+#partners .slider-page {
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 40px;
+    max-width: 900px;
+}
+#partners .slider-page-item {
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.partner-item {
+    width: 220px;
+    gap: 10px;
+	height: 150px;
+	justify-content: space-between;
+}
+.partner-item_avatar_wrapper{
+	width: 100px;
+	height: 100px;
+}
+.partner-item_avatar {
+    width: 100px;
+    background: #bebdbd;
+}
+#faqs .accordion {
+    width: 70%;
+}
+#faqs .accordion > div:last-child {
+    width: 100%;
+}
+
+#whetherYouNeed {
+    padding: var(--section-content-pd) var(--section-content-pd);
+}
+#whetherYouNeed div > div {
+    align-items: end;
+}
+#whetherYouNeed div > div > div {
+    width: 100%;
+}
+#whetherYouNeed div > div strong {
+    color: var(--light-orange);
+}
+#checkOut {
+    margin-top: var(--section-content-pd);
+}
+
+#call3 {
+    background-image: url('data:image/svg+xml,<svg width="1440" height="408" viewBox="0 0 1440 408" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="1440" height="408" fill="white"/><path d="M0 265L445 265" stroke="%23F59A17" stroke-width="2"/><path d="M995 328L1440 328" stroke="%23F59A17" stroke-width="2"/><path fill-rule="evenodd" clip-rule="evenodd" d="M130.916 216.305L129.798 220.624L158.271 220.632L157.2 224.949L128.68 224.942L125.889 235.725H145.414L144.343 240.043H124.771L120.857 255.163L139.397 255.163C139.391 258.156 140.434 260.703 142.526 262.804C144.617 264.906 147.146 265.956 150.111 265.956C153.083 265.959 155.611 264.909 157.697 262.804C159.783 260.7 160.826 258.153 160.826 255.163H181.269C181.271 258.159 182.314 260.706 184.397 262.804C186.48 264.903 189.007 265.953 191.979 265.956C194.95 265.959 197.479 264.909 199.564 262.804C201.65 260.7 202.693 258.153 202.693 255.163H207.639L211.35 236.235L199.727 220.623H190.817L194.289 205.512L145.082 205.512L142.288 216.305H130.916ZM143.683 255.163C143.683 256.938 144.313 258.463 145.573 259.735C146.836 261.004 148.349 261.639 150.111 261.639C151.874 261.639 153.387 261.004 154.65 259.735C155.91 258.463 156.54 256.938 156.54 255.163C156.54 253.387 155.91 251.863 154.65 250.59C153.39 249.318 151.877 248.683 150.111 248.686C148.346 248.689 146.833 249.324 145.573 250.59C144.313 251.863 143.683 253.387 143.683 255.163ZM186.056 241.131H205.989L206.747 237.288L197.584 224.94H189.793L186.056 241.131ZM191.983 261.639C193.746 261.639 195.257 261.004 196.517 259.735C197.777 258.463 198.407 256.938 198.407 255.163C198.407 253.387 197.777 251.863 196.517 250.59C195.257 249.318 193.744 248.683 191.979 248.686C190.213 248.689 188.701 249.324 187.444 250.59C186.181 251.863 185.55 253.387 185.55 255.163C185.55 256.938 186.18 258.463 187.44 259.735C188.703 261.004 190.217 261.639 191.983 261.639Z" fill="%23F59A17"/></svg>');
+    background-position: center;
+    background-size: cover;
+}
+#call3 > div > div {
+    gap: 10px;
+}

@@ -1,0 +1,83 @@
+@import url(/css/components/geography.css);
+
+#contactsUs {
+    min-height: 800px !important;
+}
+#contactsUs .social-oval {
+    border-radius: 30px;
+    border: 1px solid rgba(0, 0, 255, 0.1);
+}
+#contactsUs > div p {
+    line-height: 28px;
+}
+#contactsUs > div > div {
+    width: 100%;
+    max-width: 595px;
+    height: 220px;
+}
+#contactsUs .icon {
+    width: 50px;
+    height: 50px;
+}
+#geography{
+	margin-top: 60px;
+}
+#contactsUsInfo {
+    justify-content: space-between;
+}
+#contactsUsInfo div:first-child {
+    gap: 10px;
+}
+#contactsUsInfo {
+    gap: 30px;
+}
+#contactUsPhone {
+    min-width: 335px;
+}
+
+.hero::after {
+    display: none;
+}
+
+#formSection{
+	--form-b: 0px;
+	position: relative;
+	min-height: 340px;
+}
+
+form {
+    max-width: 500px;
+    width: 100%;
+    --form-pd: 40px;
+    --form-rad: 40px;
+    background-color: white;
+    gap: 30px;
+    opacity: 0.9;
+    border-radius: var(--form-rad);
+    padding: var(--form-pd);
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 5px rgba(0, 0, 0, 0.24);
+}
+#form > div {
+    gap: 8px;
+}
+#formWrapper {
+	position: absolute;
+	bottom: var(--form-b);
+    width: 100%;
+}
+
+#notifyType {
+    gap: 10px;
+    flex-wrap: wrap;
+}
+#formWrapper button {
+    gap: 10px;
+    text-transform: uppercase;
+}
+
+@media (max-width: 440px) {
+    form {
+        --form-pd: 20px;
+    }
+
+}

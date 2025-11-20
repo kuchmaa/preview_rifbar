@@ -1,0 +1,594 @@
+#main-image{
+    min-width: 400px;
+    border-radius: 25px;
+}
+#company-logo{
+    width: 64px;
+}
+#countdown{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+.countdown-number{
+    color: var(--blue);
+    font-weight: bold;
+    font-size: 21px;
+}
+#promo-info{
+    gap: 12px;
+}
+#company-logo-wrapper{
+    gap: 8px;
+}
+#company-logo-wrapper h2{
+    font-weight: 600;
+    text-transform: none;
+    font-size: 21px;
+    line-height: normal;
+    font-family: var(--main-font);
+}
+.stats-section {
+    gap: 18px;
+}
+h5, h4, h6{
+    font-family: var(--main-font);
+}
+h5, h6{
+    margin: 0;
+}
+h5 i{
+    margin-right: 6px;
+}
+.progress-custom{
+    height: 21px;
+    background-color: rgba(0, 0, 0, 0.13);
+    border-radius: 50px;
+    overflow: hidden;
+}
+.progress-bar-custom{
+    width: 100%;
+    height: 100%;
+    background: var(--blue);
+}
+.text-muted {
+    color: #6c757d;
+    opacity: 0.65;
+}
+#registerForm{
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 25px;
+    background-color: rgba(48, 79, 255, 0.2);
+}
+#registerForm, #registerForm > div{
+    gap: 16px;
+}
+.promo-cards{
+    gap: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.promo-cards > .card{
+    gap: 12px;
+    display: flex;
+    flex-direction: row;
+    width: 360px;
+    max-width: 100%;
+}
+.promo-cards > .card p {
+    margin: 0;
+    text-align: start !important;
+}
+.promo-cards > .card div:first-child{
+    width: 60px;
+    min-width: 60px;
+    height: 60px;
+    background: var(--blue);
+    color: white;
+    font-size: 21px;
+    border-radius: 60px;
+}
+.promo-cards > .card div:last-child{
+    width: 100%;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+}
+/* Success Content Styles */
+
+        .success-icon {
+            width: 120px;
+            height: 120px;
+            background: linear-gradient(135deg, #28a745, #20c997);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 2rem;
+            animation: checkmark-bounce 0.6s ease-in-out;
+        }
+
+        .success-icon i {
+            font-size: 60px;
+            color: white;
+        }
+
+        @keyframes checkmark-bounce {
+            0% { transform: scale(0); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        .success-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            color: #28a745;
+        }
+
+        .success-message {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            color: #6c757d;
+            line-height: 1.6;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+
+
+        .info-card p {
+            margin: 0;
+            color: #6c757d;
+        }
+
+        .social-share {
+            margin-top: 2rem;
+            gap: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .social-btn {
+            display: inline-block;
+            margin: 0 10px;
+            padding: 10px 15px;
+            border-radius: 10px;
+            color: white;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+        }
+
+        .social-btn:hover {
+            transform: translateY(-2px);
+            color: white;
+            text-decoration: none;
+        }
+
+        .social-btn.facebook { background: #3b5998; }
+        .social-btn.instagram { background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); }
+
+        .alert {
+            border-radius: 15px;
+            border: none;
+            margin: 1.5rem 0;
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+        }
+
+        .alert-info {
+            background-color: rgba(231, 243, 255, 0.9);
+            color: #0c5460;
+        }
+
+        .alert ul {
+            margin-bottom: 0;
+            padding-left: 1.5rem;
+            text-align: left;
+        }
+        @media (max-width: 860px) {
+            #promo-section {
+                --section-content-pd: 0px;
+            }
+        }
+        /* Mobile Responsive Styles */
+        @media (max-width: 768px) {
+
+            /* Main Image */
+            #main-image {
+                width: 100% !important;
+                max-width: 280px !important;
+                height: auto !important;
+                margin: 0 auto !important;
+                order: 1;
+                border-radius: 12px;
+                box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            }
+
+            /* Promo Info Container */
+            #promo-info {
+                order: 2;
+                width: 100% !important;
+                padding: 0 !important;
+                margin: 0 !important;
+            }
+
+            /* Typography */
+            h1 {
+                font-size: 1.6rem !important;
+                text-align: center !important;
+                margin: 0 0 1rem 0 !important;
+                line-height: 1.3 !important;
+                font-weight: bold !important;
+            }
+
+            h2 {
+                font-size: 1.2rem !important;
+                text-align: center !important;
+                margin: 0.5rem 0 !important;
+            }
+
+
+            /* Company Logo Section */
+            #company-logo-wrapper {
+                justify-content: center !important;
+                align-items: center !important;
+                flex-direction: row !important;
+                text-align: center !important;
+                margin: 1rem 0 !important;
+                gap: 0.8rem;
+            }
+
+            #company-logo {
+                max-width: 40px !important;
+                height: auto !important;
+                margin: 0 !important;
+            }
+
+            /* Countdown Timer */
+            .countdown {
+                display: flex !important;
+                flex-wrap: wrap !important;
+                justify-content: center !important;
+                gap: 0.5rem !important;
+                margin: 1.5rem 0 !important;
+                padding: 0 !important;
+            }
+
+            .countdown-item {
+                min-width: 65px !important;
+                padding: 0.8rem 0.4rem !important;
+                margin: 0.2rem !important;
+                border-radius: 8px !important;
+                background: rgba(255,255,255,0.9) !important;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.1) !important;
+            }
+
+            .countdown-number {
+                font-size: 1.3rem !important;
+                font-weight: bold !important;
+                display: block !important;
+            }
+
+            .countdown-label {
+                font-size: 0.7rem !important;
+                text-transform: uppercase !important;
+                display: block !important;
+                margin-top: 0.2rem !important;
+            }
+
+            /* Participants Info */
+            .participants-info,
+            .participants-info p,
+            [class*="participants"] {
+                text-align: center !important;
+                margin: 1rem 0 !important;
+                font-size: 0.9rem !important;
+            }
+
+            /* Prize Section */
+            .prize-section {
+                text-align: center !important;
+                margin: 1.5rem 0 !important;
+                padding: 1rem !important;
+                background: rgba(255,255,255,0.8) !important;
+                border-radius: 12px !important;
+            }
+
+            .prize-section h3 {
+                font-size: 1.3rem !important;
+                margin-bottom: 0.8rem !important;
+                color: #333 !important;
+            }
+
+            /* Form Styles */
+            form {
+                margin: 2rem 0 !important;
+                padding: 0 !important;
+            }
+
+            .text-input {
+                margin-bottom: 1rem !important;
+                width: 100% !important;
+            }
+
+            .text-input span {
+                font-size: 0.9rem !important;
+                margin-bottom: 0.5rem !important;
+                display: block !important;
+                text-align: left !important;
+                font-weight: 500 !important;
+            }
+
+            .inputWrapper {
+                width: 100% !important;
+                padding: 0.9rem !important;
+                font-size: 1rem !important;
+                border: 2px solid #e0e0e0 !important;
+                border-radius: 8px !important;
+                box-sizing: border-box !important;
+                background: white !important;
+            }
+
+            .inputWrapper:focus {
+                border-color: #007bff !important;
+                outline: none !important;
+                box-shadow: 0 0 0 3px rgba(0,123,255,0.1) !important;
+            }
+
+            button[type="submit"] {
+                width: 100% !important;
+                padding: 1rem 2rem !important;
+                font-size: 1.1rem !important;
+                font-weight: bold !important;
+                margin: 1.5rem 0 !important;
+                border-radius: 8px !important;
+                border: none !important;
+                background: linear-gradient(135deg, #007bff, #0056b3) !important;
+                color: white !important;
+                cursor: pointer !important;
+                transition: all 0.3s ease !important;
+            }
+
+            button[type="submit"]:hover {
+                transform: translateY(-2px) !important;
+                box-shadow: 0 4px 15px rgba(0,123,255,0.3) !important;
+            }
+
+            /* Success Content */
+            .success-content {
+                padding: 2rem 1rem !important;
+                text-align: center !important;
+            }
+
+            .success-title {
+                font-size: 1.6rem !important;
+                margin-bottom: 1rem !important;
+            }
+
+            .success-icon {
+                width: 70px !important;
+                height: 70px !important;
+                margin: 0 auto 1.5rem !important;
+            }
+
+            .success-icon i {
+                font-size: 35px !important;
+            }
+
+            .success-message {
+                font-size: 1rem !important;
+                margin-bottom: 1.5rem !important;
+                line-height: 1.5 !important;
+            }
+
+            .info-grid {
+                display: grid !important;
+                grid-template-columns: 1fr !important;
+                gap: 1rem !important;
+                margin: 1.5rem 0 !important;
+            }
+
+            .info-card {
+                padding: 1rem !important;
+                text-align: center !important;
+                background: rgba(255,255,255,0.9) !important;
+                border-radius: 8px !important;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.1) !important;
+            }
+
+            .info-card h5 {
+                font-size: 1rem !important;
+                margin-bottom: 0.5rem !important;
+                color: #333 !important;
+            }
+
+            .info-card p {
+                font-size: 0.9rem !important;
+                margin: 0 !important;
+                color: #666 !important;
+            }
+
+            /* Social Buttons */
+            .social-sharing {
+                margin: 2rem 0 !important;
+                text-align: center !important;
+            }
+
+            .social-btn {
+                display: block !important;
+                margin: 0.8rem auto !important;
+                width: 220px !important;
+                max-width: 90% !important;
+                text-align: center !important;
+                padding: 0.9rem 1rem !important;
+                font-size: 0.95rem !important;
+                border-radius: 8px !important;
+                text-decoration: none !important;
+                font-weight: 500 !important;
+                transition: all 0.3s ease !important;
+            }
+
+            .social-btn:hover {
+                transform: translateY(-2px) !important;
+                box-shadow: 0 4px 15px rgba(0,0,0,0.2) !important;
+            }
+
+            /* Alerts */
+            .alert {
+                margin: 1rem 0 !important;
+                padding: 1rem !important;
+                font-size: 0.9rem !important;
+                border-radius: 8px !important;
+                text-align: center !important;
+            }
+
+            /* Terms Section */
+            .terms-section {
+                margin: 2rem 0 !important;
+                padding: 1.5rem 1rem !important;
+                background: rgba(255,255,255,0.8) !important;
+                border-radius: 12px !important;
+            }
+
+            .terms-section h4 {
+                font-size: 1.1rem !important;
+                text-align: center !important;
+                margin-bottom: 1rem !important;
+            }
+
+            .terms-section p {
+                font-size: 0.85rem !important;
+                line-height: 1.5 !important;
+                text-align: left !important;
+            }
+        }
+
+        @media (max-width: 480px) {
+            #main-image {
+                max-width: 250px !important;
+            }
+
+            h1 {
+                font-size: 1.4rem !important;
+                line-height: 1.2 !important;
+            }
+
+            h2 {
+                font-size: 1.1rem !important;
+            }
+
+            #company-logo {
+                max-width: 35px !important;
+            }
+
+            .countdown-item {
+                min-width: 55px !important;
+                padding: 0.6rem 0.3rem !important;
+                margin: 0.1rem !important;
+            }
+
+            .countdown-number {
+                font-size: 1.1rem !important;
+            }
+
+            .countdown-label {
+                font-size: 0.65rem !important;
+            }
+
+            .text-input span {
+                font-size: 0.85rem !important;
+            }
+
+            .inputWrapper {
+                padding: 0.8rem !important;
+                font-size: 0.95rem !important;
+            }
+
+            button[type="submit"] {
+                padding: 0.9rem 1.5rem !important;
+                font-size: 1rem !important;
+                margin: 1.2rem 0 !important;
+            }
+
+            .success-title {
+                font-size: 1.4rem !important;
+            }
+
+            .success-icon {
+                width: 60px !important;
+                height: 60px !important;
+            }
+
+            .success-icon i {
+                font-size: 30px !important;
+            }
+
+            .success-message {
+                font-size: 0.9rem !important;
+            }
+
+            .info-card {
+                padding: 0.8rem !important;
+            }
+
+            .info-card h5 {
+                font-size: 0.9rem !important;
+            }
+
+            .info-card p {
+                font-size: 0.8rem !important;
+            }
+
+            .social-btn {
+                width: 200px !important;
+                padding: 0.8rem 0.9rem !important;
+                font-size: 0.9rem !important;
+            }
+
+            .prize-section {
+                padding: 0.8rem !important;
+                margin: 1rem 0 !important;
+            }
+
+            .prize-section h3 {
+                font-size: 1.2rem !important;
+            }
+
+            .terms-section {
+                padding: 1rem 0.8rem !important;
+                margin: 1.5rem 0 !important;
+            }
+
+            .terms-section h4 {
+                font-size: 1rem !important;
+            }
+
+            .terms-section p {
+                font-size: 0.8rem !important;
+            }
+        }
+@media (max-width: 1100px) {
+#promo-section > div {
+    --wrap: wrap;
+    justify-content: center;
+}
+#main-image{
+    min-width: 100%;
+    max-width: 900px;
+    border-radius: 25px;
+}
+#promo-section > div > div {
+    width: 900px;
+}
+}

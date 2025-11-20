@@ -1,0 +1,704 @@
+@import url(/css/service_svg.css);
+:root {
+    --form-pd: 120px;
+}
+#phoneCodeMenu,
+#cityMenu {
+    right: 0;
+}
+.phoneCodeItem {
+    color: black !important;
+    cursor: pointer;
+}
+#hero1 {
+    min-height: 300px;
+}
+.hero_section_img {
+    top: -600px;
+}
+.hero-content {
+    gap: 0;
+    max-width: 100%;
+}
+.hero-content .p {
+    text-wrap: wrap;
+}
+
+#calcSection .section-content > div {
+    align-items: start;
+}
+
+#calcSection .banner {
+    max-width: 520px;
+}
+
+#calc .section-content > div {
+    padding-bottom: 0;
+    padding-right: var(--form-pd);
+    padding-left: var(--form-pd);
+}
+
+#calcSpan {
+    --width: 50%;
+    min-width: var(--width);
+    width: var(--width);
+    margin: 0;
+    gap: 0;
+}
+
+#checkboxes {
+    max-width: 100%;
+    justify-content: flex-start;
+    overflow: auto;
+    padding-bottom: 10px;
+}
+#checkboxes::-webkit-scrollbar {
+    background-color: #bebdbd4f;
+    border-radius: 30px;
+    height: 10px;
+}
+#checkboxes::-webkit-scrollbar-thumb {
+    background-color: var(--gray);
+    border-radius: 30px;
+}
+
+.checkBox {
+    width: 100%;
+    min-width: 135px;
+    padding: 8px;
+    box-sizing: border-box;
+    border-bottom: 2px solid black;
+    position: relative;
+    cursor: pointer;
+}
+
+.checkBox svg {
+    fill: black;
+}
+.checkBox[active],
+.checkBox[active] svg {
+    color: var(--blue);
+    fill: var(--blue);
+}
+.checkBox[active] {
+    border-color: var(--blue);
+}
+.checkBox[checked],
+.checkBox[checked] svg {
+    color: var(--light-orange);
+    fill: var(--light-orange);
+}
+.checkBox > div {
+    height: 80px;
+    position: relative;
+}
+.checkBox[checked] {
+    border-color: var(--light-orange);
+}
+.checkBox[checked],
+.checkBox[checked] svg {
+    color: var(--light-orange);
+    fill: var(--light-orange);
+}
+.checkBox[checked] > div::after {
+    display: block;
+    content: url('data:image/svg+xml,<svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.571289" width="23" height="23" rx="11.5" fill="%23F59A17"/><path d="M19.5713 10L11.5713 17L6.57129 13L6.57129 11L11.5713 15L19.5713 8L19.5713 10Z" fill="white"/></svg>');
+    position: absolute;
+    top: -5px;
+    right: -8px;
+}
+
+.box-tab {
+    --pd: 40px;
+    --gap: 30px;
+    display: none;
+    padding-bottom: var(--pd);
+    padding-left: var(--pd);
+    gap: var(--gap);
+    justify-content: space-between;
+    border-bottom: solid var(--blue) 2px;
+    border-left: solid var(--blue) 2px;
+    border-bottom-left-radius: 60px;
+}
+#boxes > div {
+    width: 100%;
+    gap: 15px;
+    max-width: 476px;
+}
+.box-tab[active] {
+    display: flex;
+}
+.box-list {
+    gap: 16px;
+}
+.box {
+    gap: 10px;
+    width: 100%;
+    min-height: 60px;
+}
+
+.box-size {
+    text-transform: uppercase;
+    width: 50px;
+    height: 50px;
+    border: 2px solid var(--blue);
+    justify-content: center;
+    box-sizing: border-box;
+}
+.box-size-wrapper {
+    gap: 10px;
+    align-items: center;
+}
+.box-size-values {
+    --values-min-w: 110px;
+    min-width: var(--values-min-w);
+}
+.box-size-values {
+    justify-content: space-between;
+}
+.box-tab-count {
+    height: 60px;
+    padding-top: 16px;
+    padding-right: 24px;
+    padding-bottom: 16px;
+    padding-left: 24px;
+    box-sizing: border-box;
+    gap: 8px;
+    border-radius: 30px;
+    border: 2px solid black;
+}
+.box-tab-delete {
+    width: 60px;
+    height: 60px;
+    box-sizing: border-box;
+    border: 2px solid #bebdbd;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.box-tab-delete::before {
+    content: url('data:image/svg+xml,<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.2135 6.91988L5.35742 5.6144L5.55572 4.40005C5.56878 4.32038 5.59625 4.24427 5.63655 4.17608C5.67684 4.10789 5.72918 4.04894 5.79056 4.00262C5.85195 3.9563 5.92118 3.9235 5.9943 3.90611C6.06742 3.88872 6.143 3.88707 6.21671 3.90125L22.0565 6.91988L24.1716 7.32262C24.2455 7.33659 24.316 7.36617 24.3792 7.40966C24.4425 7.45314 24.4972 7.50968 24.5401 7.57604C24.5831 7.64239 24.6136 7.71726 24.6297 7.79634C24.6459 7.87543 24.6475 7.95719 24.6343 8.03694L24.436 9.24882L22.0542 8.7956L21.1425 25.5379C21.1085 26.1646 21.0182 27.8571 21.0182 27.8571C21.0182 27.8571 19.451 27.8561 18.8701 27.8569H10.6317C10.0501 27.8571 8.48224 27.8571 8.48224 27.8571C8.48224 27.8571 8.38982 26.1652 8.3558 25.5379L7.44523 8.76727H21.9072L12.2135 6.91988ZM11.3314 11.8463L11.9012 22.9306H13.6107L13.1548 11.8463H11.3314ZM16.4597 11.8463L15.8899 22.9306H17.5994L18.1692 11.8463H16.4597ZM13.4443 2.15239L17.9344 3.00712C18.0082 3.02124 18.0786 3.05092 18.1417 3.09447C18.2048 3.13801 18.2593 3.19457 18.3022 3.26091C18.345 3.32725 18.3754 3.40207 18.3915 3.48109C18.4076 3.56011 18.4091 3.64178 18.396 3.72144L18.1977 4.93333L12.5861 3.86431L12.7844 2.65119C12.7975 2.57152 12.825 2.49541 12.8652 2.42722C12.9055 2.35903 12.9579 2.30008 13.0193 2.25376C13.0807 2.20744 13.1499 2.17464 13.223 2.15725C13.2961 2.13986 13.3706 2.13821 13.4443 2.15239Z" fill="%23F63A2B" /></svg>');
+    height: 30px;
+}
+.disabled {
+    border: 2px solid #bebdbd;
+}
+.disabled input {
+    color: #bebdbd;
+}
+.box-tab-count input[type="number"] {
+    border: none;
+    text-align: center;
+    width: 60px;
+}
+.box-tab-count svg {
+    cursor: pointer;
+}
+
+#custom-box {
+    --wrap: nowrap;
+    --ai: start;
+    align-items: var(--ai);
+    display: none;
+    width: 100%;
+    flex-wrap: var(--wrap);
+}
+
+#custom-box-btn {
+    display: none;
+    min-height: 60px;
+}
+#custom-box-btn[active] {
+    display: flex;
+}
+#custom-box[active] {
+    display: flex;
+}
+.custom-values-wrapper,
+.custom-btn {
+    width: 100%;
+    height: 100%;
+}
+
+.custom-btn {
+    display: none;
+    border: 2px solid var(--blue);
+}
+#customMattressesBtn {
+    width: 100%;
+    box-sizing: border-box;
+}
+#showCustomMattresses {
+    padding: 0;
+}
+.custom-btn[active] {
+    display: flex;
+}
+
+#boxCustomValues button {
+    text-transform: uppercase;
+}
+#boxCustomValues input {
+    max-width: 100%;
+    width: 256px;
+}
+
+#furnitureSizesWrapper {
+    gap: 20px;
+}
+
+#furniture {
+    --gap: 0px;
+}
+#furniture > div {
+    gap: 45px;
+}
+#custom-furniture button {
+    margin-top: 30px;
+}
+#custom-furniture {
+    gap: 60px;
+}
+#showFurnitureCustom,
+#furnitureCustomSize {
+    display: none;
+    margin-top: 30px;
+}
+#showFurnitureCustom[active],
+#furnitureCustomSize[active] {
+    display: flex;
+}
+#furnitureCustomValues input {
+    max-width: 100%;
+    width: 260px;
+}
+
+#van {
+    justify-content: space-between;
+}
+#van > div:first-child {
+    gap: 20px;
+    width: 45%;
+}
+#van > div:first-child span {
+    width: 100%;
+}
+
+#mattresses > div {
+    width: 50%;
+}
+#mattressesAccordion {
+    gap: 10px;
+}
+#mattressesAccordion .accordion-item {
+    border: none;
+    padding: 0px;
+    gap: 16px;
+}
+#mattressesAccordion .accordion-item_header {
+    height: 34px;
+    padding: 15px;
+    border-bottom: solid 2px var(--light-orange);
+}
+#mattresses table {
+    border-collapse: collapse;
+}
+#mattresses thead,
+#mattresses tr {
+    height: 40px;
+}
+#mattresses thead th,
+#mattresses thead td {
+    border-collapse: collapse;
+    border: none;
+    border-bottom: 2px solid black;
+}
+#mattresses tr th,
+#mattresses tr td {
+    width: 120px;
+    background: transparent;
+}
+#customMattressesList[hidden] {
+    display: none;
+}
+
+#customMattressesList .box {
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+    position: relative;
+    width: 100%;
+    height: 128px;
+}
+#customMattressesList .box-list {
+    width: 100%;
+}
+#customMattressesList .box-size {
+    width: 40px;
+    height: 40px;
+}
+#customMattressesList .box-size {
+    width: 50px;
+    height: 50px;
+}
+#customMattressesList .box-size-wrapper {
+    align-items: flex-start;
+    flex-direction: column;
+}
+#customMattressesList .box-tab-delete {
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+}
+#customMattressesList .box-tab-count {
+    position: absolute;
+    top: 0px;
+    right: 0;
+}
+#customMattressesList .accordion-item_body {
+    padding-left: 10px;
+}
+
+#customMattressesBtn {
+    display: none;
+}
+#mattressesCustomInputs {
+    display: none;
+    width: 100%;
+}
+#mattressesCustomInputs[active],
+#customMattressesBtn[active] {
+    display: flex;
+}
+#mattressesCustomInputs .text-input {
+    width: 100%;
+}
+
+#doors > div {
+    width: 100%;
+}
+#doors > .box {
+    justify-content: flex-end;
+}
+#tv > div:first-child {
+    width: 100%;
+}
+#tv > div:first-child span {
+    width: 100%;
+}
+
+#tv,
+#suitcases {
+    justify-content: space-between;
+}
+
+#suitcases > div {
+    width: 100%;
+}
+#suitcases .box-size-values {
+    --values-min-w: 190px;
+}
+
+#inputs-section .section-content > div {
+    padding-top: 0;
+    padding-right: var(--form-pd);
+    padding-left: var(--form-pd);
+}
+#inputs {
+	--wrap: wrap;
+    gap: 20px;
+}
+#upWrapper,
+#deliverWrapper{
+	width: calc(50% - 10px);
+	gap: 20px;
+}
+select {
+	font-size: 18px;
+	appearance: none; /* Убирает системную стрелку */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' viewBox='0 0 10 6' xmlns='http://www.w3.org/2000/svg'><path d='M0 0l5 6 5-6z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 10px center; /* <-- здесь двигаем стрелку */
+  background-size: 12px;
+}
+option{
+	color: black;
+}
+
+#customerData {
+	width: 100%;
+	gap: 20px;
+}
+#customerData .text-input {
+	min-width: 280px;
+	flex: 1 1 13.333%;
+    scroll-margin-top: 100px;
+}
+#inputs > .text-input,
+#inputs fieldset {
+    --input-width: 46%;
+    min-width: 300px;
+    width: var(--input-width);
+}
+
+fieldset {
+    box-sizing: border-box;
+    border-radius: 30px;
+    border-top-left-radius: 10px;
+    border: 2px solid #bebdbd;
+    padding: 40px 20px;
+    gap: 10px;
+}
+legend {
+    padding: 0 20px;
+    margin-left: -41px;
+}
+fieldset > div {
+    width: 100% !important;
+}
+#insuranceWrapper {
+    width: 100%;
+    gap: 10px;
+}
+#insuranceWrapper input {
+    width: 100%;
+}
+#orderAmount {
+    gap: 16px;
+}
+#orderAmount > div:last-child{
+	margin-top: 20px;
+}
+#orderAmount > div > div .h2 {
+	font-family: var(--main-font) !important;
+}
+#order-wrapper > div{
+    --content-pd: 25px;
+    --wrap: wrap;
+    gap: 20px;
+    border: 2px solid var(--blue);
+    border-radius: 40px;
+    padding: var(--content-pd);
+    justify-content: space-between;
+}
+/* #order-wrapper > div {
+    min-width: 320px;
+} */
+#order {
+    flex-wrap: wrap;
+    gap: 20px;
+    position: relative;
+}
+/* #order .banner {
+    position: absolute;
+    background-color: white;
+    top: calc(-70px - var(--content-pd));
+    right: -50%;
+} */
+
+#services {
+    padding: calc(var(--section-pd) + var(--section-content-pd));
+}
+#services .section-border_top_l {
+    top: calc(0 - var(--section-pd));
+}
+#services_cards {
+    box-sizing: border-box;
+    margin-top: 40px;
+    justify-content: space-evenly;
+    row-gap: 40px;
+    flex-wrap: wrap;
+}
+.service-card .service-svg {
+    max-width: 60px;
+}
+.service-card {
+    width: 100%;
+    max-width: 350px;
+}
+.service-card h3 {
+    text-transform: none;
+}
+.service-card > div {
+    max-width: 297px;
+}
+
+.slider-page {
+    width: 100%;
+    background: white;
+    gap: 50px;
+    box-sizing: border-box;
+    position: relative;
+}
+#map {
+    position: absolute !important;
+    width: 245px !important;
+    height: auto !important;
+    top: 0px !important;
+    left: 0px !important;
+}
+
+#shipWhitUs {
+    padding: 50px 30px 50px 260px;
+    overflow: hidden;
+    border-radius: 30px;
+    justify-content: space-between;
+}
+
+.slider-controls {
+    top: 35%;
+}
+
+.service-card svg {
+    min-width: 60px;
+    fill: white;
+}
+
+/* Стили для кнопки в состоянии загрузки */
+button:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+/* Стили для сообщений об ошибках */
+.alert {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+.alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+}
+
+#confirmRules{
+    margin: 18px 0;
+}
+#orderOptionWrapper{
+    max-width: 380px;
+    align-items: start;
+}
+/* Payment Method Styles */
+
+.payment-method-wrapper {
+    box-sizing: border-box;
+    margin: 20px 0;
+    border-radius: 12px;
+}
+
+.payment-method-title {
+    color: #2c3e50;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.payment-method-title i {
+    margin-right: 8px;
+    color:  var(--blue);
+}
+
+.payment-methods {
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.payment-method-option {
+    position: relative;
+    min-width: 82px;
+}
+
+.payment-method-option input[type="radio"] {
+    display: none;
+}
+
+.payment-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 20px;
+    background: white;
+    border: 2px solid #dee2e6;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.payment-label:hover {
+    border-color: #3498db;
+    background: #f0f8ff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(52, 152, 219, 0.15);
+}
+
+.payment-method-option input[type="radio"]:checked + .payment-label {
+    border-color: #3498db;
+    background: #e3f2fd;
+    color: #1976d2;
+}
+
+.payment-label i {
+    font-size: 24px;
+    margin-bottom: 8px;
+    color: #6c757d;
+    transition: color 0.3s ease;
+}
+
+.payment-method-option input[type="radio"]:checked + .payment-label i {
+    color: #1976d2;
+}
+
+.payment-label span {
+    font-size: 14px;
+    font-weight: 500;
+    color: #495057;
+    transition: color 0.3s ease;
+}
+
+.payment-method-option input[type="radio"]:checked + .payment-label span {
+    color: #1976d2;
+    font-weight: 600;
+}
+
+/* Stripe specific styling */
+.payment-method-option input[value="stripe"]:checked + .payment-label {
+    border-color: #635bff;
+    background: #f6f5ff;
+    color: #635bff;
+}
+
+.payment-method-option input[value="stripe"]:checked + .payment-label i,
+.payment-method-option input[value="stripe"]:checked + .payment-label span {
+    color: #635bff;
+}
+
+/* Zelle specific styling */
+.payment-method-option input[value="zelle"]:checked + .payment-label {
+    border-color: #6a1b9a;
+    background: #f3e5f5;
+    color: #6a1b9a;
+}
+
+.payment-method-option input[value="zelle"]:checked + .payment-label i,
+.payment-method-option input[value="zelle"]:checked + .payment-label span {
+    color: #6a1b9a;
+}
+
+/* Cash specific styling */
+.payment-method-option input[value="cash"]:checked + .payment-label {
+    border-color: #2e7d32;
+    background: #e8f5e8;
+    color: #2e7d32;
+}
+
+.payment-method-option input[value="cash"]:checked + .payment-label i,
+.payment-method-option input[value="cash"]:checked + .payment-label span {
+    color: #2e7d32;
+}
+

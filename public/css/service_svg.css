@@ -1,0 +1,46 @@
+.service-svg {
+    width: 60px;
+    height: 60px;
+}
+.svg-door {
+    content: url(/svg/service_door.svg);
+}
+.svg-coordinates {
+    content: url(/svg/coordinates.svg);
+}
+.svg-secure {
+    content: url(/svg/secure.svg);
+}
+.svg-support {
+    content: url(/svg/support.svg);
+}
+.svg-state-coverage{
+    content: url(/svg/coverage.svg);
+}
+.svg-box {
+    content: url(/svg/service_box.svg);
+}
+.svg-ebay {
+    content: url(/svg/service_ebay.svg);
+}
+.svg-amazon {
+    content: url(/svg/service_amazon.svg);
+}
+.svg-clock {
+    content: url(/svg/service_clock.svg);
+}
+.svg-time-tracking {
+    content: url(/svg/service-time-tracking.svg);
+}
+.svg-dollar {
+    content: url(/svg/dollar.svg);
+}
+.svg-add-human {
+    content: url(/svg/addHuman.svg);
+}
+.svg-boxs {
+    content: url(/svg/boxs.svg);
+}
+.svg-cannot {
+    content: url(/svg/cannot.svg);
+}

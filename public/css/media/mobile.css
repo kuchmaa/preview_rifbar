@@ -1,0 +1,128 @@
+@media (max-width: 860px) {
+    :root {
+        --section-big-border: 100px;
+		--section-content-pd: 20px;
+    }
+
+    .section-border {
+        display: none;
+    }
+    .section-img-box {
+        position: absolute;
+        width: 160px;
+        z-index: -1;
+        top: 20px;
+        right: var(--section-pd);
+    }
+    .section-img-box::after {
+        display: none;
+    }
+
+    .section-content_left > div {
+        padding-top: 60px;
+        padding-right: 20px;
+    }
+
+    .txt-block:first-child {
+        border-top-left-radius: 60px;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 30px 20px 0;
+        text-align: center;
+        border-top: 2px solid var(--light-orange);
+        border-left: 2px solid var(--light-orange);
+    }
+    .txt-block:last-child {
+        box-sizing: border-box;
+        border-bottom-right-radius: 60px;
+        width: 100%;
+        padding: 0 20px 30px;
+        text-align: center;
+        border-bottom: 2px solid var(--light-orange);
+        border-right: 2px solid var(--light-orange);
+    }
+}
+@media (max-width: 768px){
+    #clientSlider {
+        flex-direction: column;
+    }
+    #clientSlider .slider-controls {
+        position: relative;
+        width: 50%;
+        left: 0;
+    }
+    .footer-section {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+@media (max-width: 560px) {
+    .section_call > div > div > div div:nth-child(2) > div {
+        gap: 10px;
+        flex-direction: column;
+        position: relative;
+        margin-top: 30px;
+    }
+    .section_call > div > div > div div:nth-child(2) > div::before {
+        position: absolute;
+        top: -80%;
+        z-index: -1;
+        pointer-events: none;
+        right: var(--section-pd);
+        background-size: 700px;
+        content: "";
+        background-position: -70px;
+        background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="478" viewBox="0 0 1440 478" fill="none"><path d="M0 338H629" stroke="%23F59A17" stroke-width="2"/><path fill-rule="evenodd" clip-rule="evenodd" d="M253.916 285.032L252.798 289.668L281.271 289.676L280.2 294.311L251.68 294.303L248.889 305.88H268.414L267.343 310.514H247.771L243.857 326.746L262.397 326.746C262.391 329.96 263.434 332.694 265.526 334.95C267.617 337.205 270.146 338.333 273.111 338.333C276.083 338.336 278.611 337.209 280.697 334.95C282.783 332.691 283.826 329.956 283.826 326.746H304.268C304.271 329.963 305.314 332.697 307.397 334.95C309.48 337.202 312.007 338.33 314.978 338.333C317.95 338.336 320.478 337.209 322.564 334.95C324.65 332.691 325.693 329.956 325.693 326.746H330.638L334.35 306.426L322.727 289.667H313.817L317.288 273.444L268.081 273.444L265.287 285.032H253.916ZM266.683 326.746C266.683 328.652 267.313 330.289 268.573 331.654C269.836 333.017 271.348 333.698 273.111 333.698C274.874 333.698 276.387 333.017 277.65 331.654C278.91 330.289 279.54 328.652 279.54 326.746C279.54 324.839 278.91 323.203 277.65 321.838C276.39 320.472 274.877 319.791 273.111 319.794C271.346 319.797 269.833 320.478 268.573 321.838C267.313 323.203 266.683 324.839 266.683 326.746ZM309.056 311.682H328.988L329.747 307.557L320.584 294.302H312.793L309.056 311.682ZM314.983 333.698C316.746 333.698 318.257 333.017 319.517 331.654C320.777 330.289 321.407 328.652 321.407 326.746C321.407 324.839 320.777 323.203 319.517 321.838C318.257 320.472 316.744 319.791 314.978 319.794C313.213 319.797 311.701 320.478 310.444 321.838C309.181 323.203 308.55 324.839 308.55 326.746C308.55 328.652 309.18 330.289 310.44 331.654C311.703 333.017 313.217 333.698 314.983 333.698Z" fill="%23F59A17"/></svg>');
+        width: 100%;
+        height: 102px;
+        background-repeat: no-repeat;
+    }
+    .section_call > div > div > div div:nth-child(2) a {
+        width: 260px;
+    }
+}
+@media (max-width: 425px) {
+    :root {
+        --section-pd: 20px;
+    }
+    .logo {
+        width: 70px;
+        height: 70px;
+    }
+    h1, .h1 {
+        font-size: 45px;
+        line-height: 48px;
+    }
+    h2, .h2 {
+        font-size: 32px;
+    }
+    .service-card {
+        height: 100%;
+        justify-content: space-between;
+    }
+
+    .header-child {
+        gap: 5px;
+    }
+    #footer-contacts {
+        padding: 20px;
+    }
+    a {
+        font-size: 14px;
+    }
+}
+@media (max-width: 380px) {
+    .service-card {
+        width: 100%;
+        max-width: 300px;
+    }
+    .section-content_right > div {
+        border-bottom-left-radius: 100px;
+        padding-bottom: 175px !important;
+    }
+	.footer-section{
+		flex-direction: column;
+		align-items: center;
+		gap: 20px;
+	}
+}

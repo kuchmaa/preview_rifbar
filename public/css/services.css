@@ -1,0 +1,122 @@
+@import url(/css/service_svg.css);
+@import url(/css/components/geography.css);
+
+#hero1 .hero-content {
+    gap: 15px;
+    max-width: 800px;
+}
+
+#services-cards {
+    margin-top: 60px;
+}
+
+#services-cards > div {
+    padding-left: 0px;
+    padding-top: 60px !important;
+    padding-right: 20px;
+    border-top: solid 2px var(--light-orange);
+    border-right: solid 2px var(--light-orange);
+    border-radius: 0 100px 0 0;
+}
+
+#services-cards > div > div{
+    gap: 30px;
+    justify-content: center;
+
+}
+
+.service-card{
+    /* max-width: 100%; */
+    width: calc(100% / 3 - 20px);
+    justify-content: space-between;
+    gap: 0;
+}
+.service-card .service-svg{
+    margin-bottom: 18px;
+}
+
+#choose-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    gap: 36px;
+    justify-content: center;
+}
+#choose-list > li > * {
+    --gap: 12px;
+    display: flex;
+    flex-direction: column;
+}
+#choose-list h3 {
+    display: flex;
+    gap: var(--gap);
+    align-items: end;
+    flex-direction: row;
+}
+#choose-list .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 40px;
+    min-height: 40px;
+    max-width: 40px;
+    max-height: 40px;
+    border-radius: 50px;
+    background-color: blue;
+    font-size: 24px !important;
+}
+.choose-item{
+
+    max-width: calc(100% / 3 - 30px);
+    min-width: 290px;
+}
+.choose-item p {
+    margin: 0;
+    padding-left: calc(40px + var(--gap));
+}
+
+#checkOut {
+    margin-bottom: 80px;
+}
+
+#checkOut > div > div{
+    gap: 30px;
+}
+#checkOut > div > div > div{
+    gap: 15px;
+}
+
+#client > div > div {
+    gap: 30px;
+}
+#client .slider-page {
+    gap: 20px;
+}
+#comments-slider .slider-page {
+    gap: 10px;
+}
+.comment-item {
+    box-sizing: border-box;
+    max-width: 550px;
+    width: 100%;
+    padding-top: 25px;
+    padding-right: 30px;
+    padding-bottom: 25px;
+    padding-left: 30px;
+    gap: 4px;
+    border-radius: 30px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--light-orange);
+}
+.comment-user {
+    gap: 6.5px;
+}
+.comment-user_avatar {
+    width: 60px;
+    min-width: 60px;
+    height: 60px;
+    min-height: 60px;
+    border-radius: 100px;
+    background-color: var(--gray);
+}

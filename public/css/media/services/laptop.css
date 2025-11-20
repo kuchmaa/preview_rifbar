@@ -1,0 +1,59 @@
+@media (max-width: 1200px) {
+    #call > div {
+        --call-pd: 40px;
+    }
+    .section_img_container {
+        width: 380px;
+        max-width: 100%;
+        height: auto;
+        aspect-ratio: 1 / 1;
+    }
+    #moving .section-img-box::before,
+    #amazon .section-img-box::before,
+    #tracking .section-img-box::before {
+        border-radius: 0 0 0 220px;
+        left: -45px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .service-card{
+        /* max-width: 100%; */
+        width: calc(100% / 2 - 20px);
+    }
+    /* #deliveryMan {
+        --section-big-border: 220px;
+    }
+    #moving .section-img-box::before,
+    #amazon .section-img-box::before,
+    #tracking .section-img-box::before {
+        display: none;
+    } */
+    .section-content_right > div {
+        border: none;
+    }
+    #call > div div:nth-child(2) > div {
+        flex-direction: column;
+    }
+    #call > div > div a:first-child {
+        margin-top: 160px;
+    }
+    #call > div > div a:last-child {
+        margin-bottom: 160px;
+    }
+    #call a:first-child:before {
+        bottom: calc(100% + 40px);
+        right: -34%;
+    }
+    #call a:last-child:after {
+        bottom: -80px;
+        left: 50%;
+    }
+
+    #call > div > div a:first-child {
+        margin-top: 160px;
+    }
+    #call > div > div a:last-child {
+        margin-bottom: 160px;
+    }
+}

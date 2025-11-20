@@ -1,0 +1,30 @@
+@media (max-width: 1300px) {
+    #services > div,
+    #call > div {
+        --aic: center;
+    }
+    #call > div > div {
+        justify-content: center;
+    }
+    #call {
+        background-position: 50% 0px;
+    }
+    #faqs > div {
+        flex-direction: column;
+    }
+    #partners .slider-page {
+        justify-content: center;
+    }
+    #call2 > div div:nth-child(2) {
+        gap: 30px;
+    }
+}
+@media (max-width: 1200px) {
+    #services_cards {
+        --aic: center;
+        justify-content: space-around;
+    }
+    #partners .slider-page-item:last-child {
+        display: none;
+    }
+}

@@ -1,0 +1,197 @@
+@media (max-width: 670px) {
+    #order-wrapper > div{
+        --content-pd: 15px;
+        /* border: none; */
+    }
+    #orderOptionWrapper h3 {
+        text-align: right;
+    }
+    .payment-methods > div {
+        width: 100%;
+    }
+    .box-list {
+        gap: 20px;
+    }
+    .hero-content h1 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+    #inputs {
+        padding-bottom: 30px;
+    }
+
+    #inputs > div .text-input,
+    #inputs fieldset, #upWrapper,
+#deliverWrapper {
+		flex: none;
+        width: 100%;
+    }
+    .box-tab {
+        --pd: 20px;
+    }
+    #custom-furniture {
+        align-items: center;
+        flex-direction: column;
+        gap: 0px;
+    }
+    #furnitureCustomSize {
+        gap: 20px;
+    }
+    #furnitureCustomValues,
+    #custom-furniture .text-input,
+    #custom-furniture input {
+        width: 100%;
+    }
+    #tv,
+    #suitcases {
+        flex-direction: column;
+    }
+    #slider h1 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .delateBoxWrapper {
+        height: 130px;
+    }
+    .box {
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 5px;
+        position: relative;
+        width: 100%;
+    }
+    .box-list {
+        width: 100%;
+    }
+    .box-size {
+        width: 40px;
+        height: 40px;
+    }
+    .box-size {
+        width: 50px;
+        height: 50px;
+    }
+    .box-size-wrapper {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .box-tab-delete {
+        position: absolute;
+        bottom: 0px;
+        right: 0;
+    }
+    .box-tab-count {
+        position: absolute;
+        top: 0px;
+        right: 0;
+    }
+    .accordion-item_body {
+        padding-left: 10px;
+    }
+    #doors > .box {
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 550px) {
+    #map {
+        width: 185px !important;
+        height: auto !important;
+    }
+    #order .banner span{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 7px;
+    }
+}
+
+@media (max-width: 425px) {
+	#services {
+		--section-pd: 5px;
+		--section-content-pd: 5px;
+	}
+	.section-content > div {
+		--section-content-pd: 0;
+	}
+    #services h1 {
+        font-size: 30px;
+        line-height: 60px;
+    }
+    #services > div {
+        gap: 0px;
+    }
+    #services_cards {
+        margin-top: 20px;
+    }
+    .service-card {
+        flex-direction: column;
+    }
+
+    #checkboxes > div {
+        width: 50%;
+    }
+    #inputs > .text-input,
+    #inputs fieldset {
+        min-width: 100%;
+    }
+}
+@media (max-width: 400px) {
+    .box-tab-count {
+        padding: 8px 12px;
+        height: 50px;
+        align-items: center;
+        gap: 5px;
+    }
+    .box-tab-count input[type="number"] {
+        width: 40px;
+    }
+    .delateBoxWrapper {
+        height: 110px;
+    }
+    .box-tab-delete {
+        width: 50px;
+        height: 50px;
+    }
+}
+    /* Payment Method Mobile Styles */
+    .payment-method-wrapper {
+        margin: 15px 0;
+        max-width: 100%;
+    }
+
+    .payment-methods {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .payment-method-option {
+        width: 100%;
+    }
+
+    .payment-label {
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: 12px 15px;
+        min-width: auto;
+        width: 100%;
+    }
+
+    .payment-label i {
+        margin-right: 12px;
+        margin-bottom: 0;
+        font-size: 20px;
+    }
+
+    .payment-method-title {
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+
+
+@media (max-width: 380px) {
+    #shipWhitUs {
+        min-height: 450px;
+    }
+
+}

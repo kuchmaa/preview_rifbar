@@ -1,0 +1,1 @@
+import{g as l}from"../chunks/DOM.js";import{a as t,c as i,V as m,p as n}from"../chunks/event.js";let e=t(form.inputsWrapper.email,{callback:(a,r)=>r,errorCallback:a=>!i({type:m.email,value:a})&&"Invalid email"});l("form").addEventListener("submit",n(a=>{e.getError()&&e.getValue()}));

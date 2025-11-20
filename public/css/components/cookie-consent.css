@@ -1,0 +1,3 @@
+#cookie-consent-banner { position: fixed; bottom: -100vh; left: 0; right: 0; background-color: white; box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.1); z-index: 9999; padding: 20px; transition: bottom 0.5s ease; font-family: var(--main-font); }
+#cookie-consent-banner.visible { bottom: 0; }
+.cookie-consent-container { max-width: var(--max-width); margin: 0 auto; display: flex; flex-direction: column; gap: 20px; } .cookie-consent-content { display: flex; flex-direction: column; gap: 15px; }

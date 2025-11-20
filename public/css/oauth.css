@@ -1,0 +1,136 @@
+/* OAuth Styles */
+.oauth-divider {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    color: #666;
+    font-size: 14px;
+}
+
+.oauth-divider::before,
+.oauth-divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: #ddd;
+}
+
+.oauth-divider span {
+    padding: 0 15px;
+    background: transparent;
+    color: #666;
+    font-weight: 500;
+}
+
+.btn_google {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+    max-width: 100%;
+    padding: 12px 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background: #f8f9fa;
+    color: #5f6368;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.btn_google:hover {
+    background: #e8f0fe;
+    border-color: #dadce0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    text-decoration: none;
+    color: #1a73e8;
+}
+
+.btn_google:focus {
+    outline: none;
+    border-color: #4285f4;
+    box-shadow: 0 0 0 2px rgba(66, 133, 244, 0.2);
+}
+
+.btn_google svg {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+}
+
+/* Ensure Google button fits perfectly in form container */
+form .btn_google {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    flex-shrink: 1;
+}
+
+/* Prevent text overflow on small screens */
+.btn_google span,
+.btn_google {
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .btn_google {
+        font-size: 14px;
+        padding: 10px 16px;
+        gap: 8px;
+    }
+    
+    .oauth-divider {
+        margin: 15px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .btn_google {
+        font-size: 13px;
+        padding: 8px 12px;
+        gap: 6px;
+    }
+    
+    .btn_google svg {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    .oauth-divider span {
+        background: transparent;
+        color: #ccc;
+    }
+    
+    .oauth-divider::before,
+    .oauth-divider::after {
+        background: #444;
+    }
+    
+    .btn_google {
+        background: #2d2d2d;
+        border-color: #444;
+        color: #e8eaed;
+    }
+    
+    .btn_google:hover {
+        background: #3c3c3c;
+        border-color: #555;
+        color: #e8eaed;
+    }
+}

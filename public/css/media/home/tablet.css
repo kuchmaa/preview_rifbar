@@ -1,0 +1,86 @@
+@media (max-width: 1100px) {
+    :root {
+        --g-pd: 280px;
+    }
+    #comments-slider .slider-page {
+        flex-direction: column;
+    }
+    #whetherYouNeed div {
+        --whetherYouNeed-pd: 20px;
+    }
+   #call2 > div div:nth-child(2) > div {
+        flex-direction: column;
+    }
+
+	.section_call a:first-child:before {
+        right: -36%;
+    }
+
+    #call2 > div > div a:first-child {
+        margin-top: 160px;
+    }
+    #call2 > div > div a:last-child {
+        margin-bottom: 160px;
+    }
+    #call2 a:first-child:before {
+        bottom: calc(100% + 40px);
+        right: -32%;
+    }
+    #call2 a:last-child:after {
+        bottom: -110px;
+        left: 50%;
+    }
+
+    #call2 > div > div a:first-child {
+        margin-top: 160px;
+    }
+    #call2 > div > div a:last-child {
+        margin-bottom: 160px;
+    }
+    #faqs .accordion {
+        width: 100%;
+    }
+    #partners .slider-controls {
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 5px;
+        width: 40%;
+    }
+    #services div:first-child{
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 890px) {
+    :root {
+        --g-pd: var(--section-content-pd);
+    }
+    #services {
+        --section-content-pd: 5px;
+    }
+
+}
+@media (max-width: 860px) {
+    #services_cards {
+        width: 100%;
+        flex-direction: row;
+    }
+    #services_cards::after {
+        content: "";
+        border-bottom: 2px solid var(--light-orange);
+        width: 90%;
+        position: absolute;
+        bottom: 0;
+        right: -5px;
+    }
+    #calculator .section-img-box {
+        display: none;
+    }
+    #calculator .section-text {
+        max-width: 100%;
+        width: 100%;
+    }
+    .service-card {
+        flex-direction: column;
+    }
+}

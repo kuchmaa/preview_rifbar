@@ -1,0 +1,85 @@
+@media (max-width: 860px) {
+    #transport .section-img-box {
+        top: calc(100% - 180px);
+        left: 20px;
+    }
+
+    #tracking_form {
+        display: none;
+    }
+    #storage .section-img-box {
+        top: calc(100% - 180px);
+        left: 20px;
+    }
+    #choose .section-img {
+        left: -80px;
+    }
+
+    #choose .section-img-box {
+        top: 20px;
+        right: 20px;
+        width: 160px;
+        height: 160px;
+    }
+
+    #setsUs > div,
+    #setsUs2 > div {
+        border-top: 2px solid var(--light-orange);
+        border-right: 2px solid var(--light-orange);
+        border-top-right-radius: 100px;
+        padding-top: 200px !important;
+    }
+    #setsUs2 .section_img_container,
+    #setsUs2 .section-img-box {
+        width: 160px;
+        height: 160px;
+    }
+    #setsUs2 .section-img {
+        left: -40px;
+    }
+    #transport > div,
+    #storage > div {
+        padding-bottom: 180px !important;
+        border-bottom-left-radius: 100px;
+        border-left: 2px solid var(--light-orange);
+        border-bottom: 2px solid var(--light-orange);
+    }
+    .section-content_right > div {
+        border-bottom-left-radius: 100px;
+    }
+    #logistics > div {
+        padding-bottom: 200px !important;
+    }
+}
+@media (max-width: 768px) {
+    #weOffer {
+        --section-content-pd: 0;
+    }
+    #geography1 {
+        height: auto;
+    }
+    #geography1 > div {
+        flex-direction: column;
+        align-items: start;
+    }
+    #geography1 > div {
+        padding-left: var(--section-content-pd);
+    }
+    #dumaOnMap {
+        position: relative;
+        left: -20px;
+        width: 100%;
+        max-width: 460px;
+    }
+    #call3 > div div:last-child,
+    #call4 > div div:last-child {
+        width: 100%;
+        flex-direction: column-reverse;
+        align-items: start;
+    }
+    .service-card {
+        flex-direction: column;
+        justify-content: flex-start;
+        --aic: start;
+    }
+}

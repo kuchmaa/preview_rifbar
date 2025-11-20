@@ -1,0 +1,161 @@
+{
+  "_DOM.js": {
+    "file": "chunks/DOM.js",
+    "name": "DOM"
+  },
+  "_event.js": {
+    "file": "chunks/event.js",
+    "name": "event"
+  },
+  "_slider.js": {
+    "file": "chunks/slider.js",
+    "name": "slider"
+  },
+  "resources/js/chat-websocket.js": {
+    "file": "chat-websocket.js",
+    "name": "chat-websocket",
+    "src": "resources/js/chat-websocket.js",
+    "isEntry": true
+  },
+  "resources/js/cookie-consent.js": {
+    "file": "cookie-consent.js",
+    "name": "cookie-consent",
+    "src": "resources/js/cookie-consent.js",
+    "isEntry": true
+  },
+  "resources/js/draft-storage.js": {
+    "file": "draft-storage.js",
+    "name": "draft-storage",
+    "src": "resources/js/draft-storage.js",
+    "isEntry": true
+  },
+  "resources/js/main.js": {
+    "file": "main.js",
+    "name": "main",
+    "src": "resources/js/main.js",
+    "isEntry": true
+  },
+  "resources/js/pages/cabinet.js": {
+    "file": "pages/cabinet.js",
+    "name": "cabinet",
+    "src": "resources/js/pages/cabinet.js",
+    "isEntry": true,
+    "imports": [
+      "_DOM.js",
+      "_event.js"
+    ]
+  },
+  "resources/js/pages/calculator.js": {
+    "file": "pages/calculator.js",
+    "name": "calculator",
+    "src": "resources/js/pages/calculator.js",
+    "isEntry": true,
+    "imports": [
+      "_slider.js",
+      "_DOM.js",
+      "_event.js"
+    ]
+  },
+  "resources/js/pages/contacts.js": {
+    "file": "pages/contacts.js",
+    "name": "contacts",
+    "src": "resources/js/pages/contacts.js",
+    "isEntry": true,
+    "imports": [
+      "_DOM.js",
+      "_event.js"
+    ]
+  },
+  "resources/js/pages/dispatcher-routes.js": {
+    "file": "pages/dispatcher-routes.js",
+    "name": "dispatcher-routes",
+    "src": "resources/js/pages/dispatcher-routes.js",
+    "isEntry": true
+  },
+  "resources/js/pages/forgotPass.js": {
+    "file": "pages/forgotPass.js",
+    "name": "forgotPass",
+    "src": "resources/js/pages/forgotPass.js",
+    "isEntry": true,
+    "imports": [
+      "_DOM.js",
+      "_event.js"
+    ]
+  },
+  "resources/js/pages/home.js": {
+    "file": "pages/home.js",
+    "name": "home",
+    "src": "resources/js/pages/home.js",
+    "isEntry": true,
+    "imports": [
+      "_slider.js",
+      "_event.js"
+    ]
+  },
+  "resources/js/pages/login.js": {
+    "file": "pages/login.js",
+    "name": "login",
+    "src": "resources/js/pages/login.js",
+    "isEntry": true,
+    "imports": [
+      "_DOM.js",
+      "_event.js"
+    ]
+  },
+  "resources/js/pages/signUp.js": {
+    "file": "pages/signUp.js",
+    "name": "signUp",
+    "src": "resources/js/pages/signUp.js",
+    "isEntry": true,
+    "imports": [
+      "_DOM.js",
+      "_event.js"
+    ]
+  },
+  "resources/js/pages/tracking.js": {
+    "file": "pages/tracking.js",
+    "name": "tracking",
+    "src": "resources/js/pages/tracking.js",
+    "isEntry": true,
+    "imports": [
+      "_DOM.js",
+      "_event.js"
+    ]
+  },
+  "resources/js/utils/DOM.js": {
+    "file": "utils/DOM.js",
+    "name": "DOM",
+    "src": "resources/js/utils/DOM.js",
+    "isEntry": true
+  },
+  "resources/js/utils/accordion.js": {
+    "file": "utils/accordion.js",
+    "name": "accordion",
+    "src": "resources/js/utils/accordion.js",
+    "isEntry": true
+  },
+  "resources/js/utils/cookies.js": {
+    "file": "utils/cookies.js",
+    "name": "cookies",
+    "src": "resources/js/utils/cookies.js",
+    "isEntry": true
+  },
+  "resources/js/utils/event.js": {
+    "file": "utils/event.js",
+    "name": "event",
+    "src": "resources/js/utils/event.js",
+    "isEntry": true
+  },
+  "resources/js/utils/menu.js": {
+    "file": "utils/menu.js",
+    "name": "menu",
+    "src": "resources/js/utils/menu.js",
+    "isEntry": true
+  },
+  "resources/js/utils/slider.js": {
+    "file": "utils/slider.js",
+    "name": "slider",
+    "src": "resources/js/utils/slider.js",
+    "isEntry": true
+  }
+}

@@ -1,0 +1,8 @@
+@import url(./signUp.css);
+#remember {
+    justify-content: space-between !important;
+    flex-wrap: wrap;
+}
+#remember > div {
+    gap: 10px;
+}
